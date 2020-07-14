@@ -1,0 +1,99 @@
+<div class="jumbotron jumbotron-fluid header pt-0">
+  <div class="container">
+    <app-header></app-header>
+    <div class="container mt-8 mb-8">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4"></div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-white pt-4 fs-34 lh-142 text-center">Blogs</h1>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-white text-center">Knowledge is sharing! We love to communicate with our clients and readers and share amazing technological advancements…</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4"></div>
+      </div>
+      <img class="oval1" src="..\assets\img\Ellipse38.svg" alt="">
+      <img class="oval2" src="..\assets\img\Ellipse38.svg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6 col-xl-6 col-md-6 mb-5" *ngFor="let blog of blogsData; let i = index;">
+      <div class="card d-none d-xl-block" [ngClass]="i%2 === 0 ? 'work-card1' : 'work-card2'">
+        <img src="{{blog.src}}" class="card-img-top" alt="...">
+        <div class="card-body body-height">
+          <p class="card-text blog-text">{{blog.content}}</p>
+          <p class="card-text">
+            <small>Added to <a href="#" class="card-link learn-more-text">{{blog.link}}</a></small>
+            <small class="float-right">{{blog.date}}</small>
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"><img src="{{blog.avatarImg}}" class="avatar-img mr-2" alt="..."><small>By <span style="color:black;">{{blog.avatarName}}</span></small></p>
+        </div>
+      </div>
+      <div class="card d-none d-lg-block d-xl-none" [ngClass]="i%2 === 0 ? 'work-card1' : 'work-card2'">
+        <img src="{{blog.src}}" class="card-img-top" alt="...">
+        <div class="card-body body-height">
+          <p class="card-text blog-text">{{blog.content}}</p>
+          <p class="card-text">
+            <small>Added to <a href="#" class="card-link learn-more-text">{{blog.link}}</a></small>
+            <small class="float-right">{{blog.date}}</small>
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"><img src="{{blog.avatarImg}}" class="avatar-img mr-2" alt="..."><small>By <span style="color:black;">{{blog.avatarName}}</span></small></p>
+        </div>
+      </div>
+      <div class="card work-card-md d-none d-md-block d-lg-none">
+        <img src="{{blog.src}}" class="card-img-top" alt="...">
+        <div class="card-body body-height">
+          <p class="card-text blog-text">{{blog.content}}</p>
+          <p class="card-text">
+            <small>Added to <a href="#" class="card-link learn-more-text">{{blog.link}}</a></small>
+            <small class="float-right">{{blog.date}}</small>
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"><img src="{{blog.avatarImg}}" class="avatar-img mr-2" alt="..."><small>By <span style="color:black;">{{blog.avatarName}}</span></small></p>
+        </div>
+      </div>
+      <div class="card work-card-sm d-none d-sm-block d-md-none">
+        <img src="{{blog.src}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text blog-text">{{blog.content}}</p>
+          <p class="card-text">
+            <small>Added to <a href="#" class="card-link learn-more-text">{{blog.link}}</a></small>
+            <small class="float-right">{{blog.date}}</small>
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"><img src="{{blog.avatarImg}}" class="avatar-img mr-2" alt="..."><small>By <span style="color:black;">{{blog.avatarName}}</span></small></p>
+        </div>
+      </div>
+      <div class="card work-card-xs d-block d-sm-none">
+        <img src="{{blog.src}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text blog-text">{{blog.content}}</p>
+          <p class="card-text">
+            <small>Added to <a href="#" class="card-link learn-more-text">{{blog.link}}</a></small>
+            <small class="float-right">{{blog.date}}</small>
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"><img src="{{blog.avatarImg}}" class="avatar-img mr-2" alt="..."><small>By <span style="color:black;">{{blog.avatarName}}</span></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

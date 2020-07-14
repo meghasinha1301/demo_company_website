@@ -1,0 +1,492 @@
+<!-- <div class="container-fluid header">
+    <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#"><img src="..\assets\img\logo.svg" alt="logo" style="width:200px;"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto topnav">
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" routerLink="./services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" routerLink="./ourWorks">Our Works</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" routerLink="./blogs">Blogs</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link btn btn-light" type="button" href="#" ><span>Contact Us
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.678" height="20.311" viewBox="0 0 41.678 28.311"><path d="M41.11,54.719l-12.4-12.243a1.956,1.956,0,0,0-2.741,0,1.9,1.9,0,0,0,0,2.705l9.094,8.977H1.938a1.913,1.913,0,1,0,0,3.826H35.061l-9.094,8.977a1.9,1.9,0,0,0,0,2.705,1.956,1.956,0,0,0,2.741,0l12.4-12.243A1.9,1.9,0,0,0,41.11,54.719Z" transform="translate(0 -41.916)" /></svg>
+                          </span></a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+
+      <div class="container section1 position-absolute">
+          <div class="row">
+              <div class="col-lg-12 middle-content">
+                  <img class="logo_small" src="..\assets\img\logo_small.svg" alt="">
+                  <h2 class="text-white">Make your Site Amazing & Unique.</h2>
+                  <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+                  <a class="btn btn-light" type="button" href="#" ><span>Learn More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.678" height="20.311" viewBox="0 0 41.678 28.311"><path d="M41.11,54.719l-12.4-12.243a1.956,1.956,0,0,0-2.741,0,1.9,1.9,0,0,0,0,2.705l9.094,8.977H1.938a1.913,1.913,0,1,0,0,3.826H35.061l-9.094,8.977a1.9,1.9,0,0,0,0,2.705,1.956,1.956,0,0,0,2.741,0l12.4-12.243A1.9,1.9,0,0,0,41.11,54.719Z" transform="translate(0 -41.916)" /></svg>
+                  </span></a>
+              </div>
+              <img class="back_small" src="..\assets\img\Group513.png" alt="">
+              <img class="mobile_small" src="..\assets\img\mobile.svg" alt="">
+              <img class="oval1" src="..\assets\img\Ellipse38.svg" alt="">
+             <img class="oval2" src="..\assets\img\Ellipse38.svg" alt="">
+          </div>
+
+      </div>
+
+  </div>
+
+
+  <div class="container section2 section"style="margin-top:150px;">
+      <h1 style="text-align: center;"><span class="border-bottom1">Awesome Service</span></h1>
+      <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+
+      <div class="row">
+
+              <div class="col-12 mt-4">
+                  <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+                    <div class="box" *ngFor="let service of services;let i=index;"
+                      data-aos="fade-up">
+                      <img class="img1" alt="" src="{{service.src}}">
+                      <h5 class="my-3">{{service.title}}</h5>
+                      <p class="">{{service.para}}</p>
+                      <p class="btn_learn position-relative">Learn More...</p>
+                    </div>
+                  </div>
+              </div>
+      </div>
+  </div>
+
+
+  <div class="container section3 section">
+      <h1 style="text-align: center;"><span class="border-bottom1">About Us</span></h1>
+      <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+
+      <div class="row">
+          <div class="col-lg-6 text-center">
+              <img class="img_about" src="..\assets\img\Group448.svg" alt="">
+          </div>
+          <div class="col-lg-5">
+              <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p style="color: blue;"><a>See More Information</a></p>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="blue_back">
+      <div class="container section4 section important_fact">
+          <div class="row">
+                  <div class="col-lg-4">
+                      <h2>Important Facts</h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+                      <a class="nav-link btn btn-light" type="button" href="#" >Learn More</a>
+                  </div>
+                  <div class="col-lg-8">
+                      <div class="row mt-4">
+                          <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+                            <div class="box1" *ngFor="let fact of facts;let i=index;"
+                              data-aos="fade-up">
+                              <img class="img1" alt="" src="{{fact.src}}">
+                              <h5 class="my-3">{{fact.title}}</h5>
+                              <p class="">{{fact.para}}</p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+      </div>
+  </div>
+
+<div class="section5 section">
+    <div class="container">
+        <h1 style="text-align: center;"><span class="border-bottom1">We Worked With</span></h1>
+        <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+    </div>
+
+    <div class="mt-4">
+        <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+          <div class="box2 col-12 col-lg-2 col-xl-2" *ngFor="let stack of stacks;let i=index;"
+            data-aos="fade-up">
+            <img class="img1" alt="" src="{{stack.src}}">
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section6 section">
+    <div class="container">
+        <h1 style="text-align: center;"><span class="border-bottom1">Industries</span></h1>
+        <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+    </div>
+
+    <div class="mt-4">
+        <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+          <div class="box3 col-12 col-lg-2 col-xl-2" *ngFor="let industry of industrys;let i=index;"
+            data-aos="fade-up">
+            <img class="img1" alt="" src="{{industry.src}}">
+            <h5 class="my-3">{{industry.title}}</h5>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="container section3 section">
+      <h1 style="text-align: center;"><span class="border-bottom1">Get In Touch</span></h1>
+      <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+
+      <div class="row">
+              <div class="col-lg-4">
+                  <h2>Contact Info</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+                  <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                  <h2>Address</h2>
+                  <p>350 Bay St, 7th floor, Toronto,ON M5H 2S6</p>
+              </div>
+              <div class="col-lg-8">
+                  <div class="col-12 mt-4">
+                      <form>
+                          <div class="row">
+                          <div class="form-group col-lg-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" value="Enter your name.." required>
+                          </div>
+
+                          <div class="form-group  col-lg-6">
+                            <label for="email">Email address</label>
+                            <input type="text" class="form-control" id="email" value="Enter your email..">
+                          </div>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="subject">Subject</label>
+                              <input type="text" class="form-control" id="subject" value="Enter subject..">
+                          </div>
+
+                          <div class="form-group">
+                              <label for="message">Message</label>
+                              <textarea id="story"  class="form-control" name="message" rows="3" cols="33"></textarea>
+                          </div>
+
+                          <button type="submit" class="btn btn-primary">Send Message</button>
+
+                        </form>
+                  </div>
+              </div>
+      </div>
+  </div>
+
+
+  <div class="black_back">
+    <div class="container section7 section">
+        <div class="row">
+                <div class="col-lg-5 ">
+                    <a class="navbar-brand" href="#"><img src="..\assets\img\logo.svg" alt="logo" style="width:200px;"></a>
+                    <p style="color: #ACACAC;">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+
+                        <a  href="#"><img class="facebook_logo social_logo" src="..\assets\img\fb.svg" alt="logo"></a>
+                        <a href="#"><img class="twitter_logo social_logo"  src="..\assets\img\twi.svg" alt="logo"></a>
+                        <a  href="#"><img class="insta_logo social_logo" src="..\assets\img\insta.svg" alt="logo"></a>
+                </div>
+
+                <div class="col-lg-3 link">
+                    <p>Company</p>
+                    <p><a  href="#">About</a></p>
+                    <p><a  href="#">Service</a></p>
+                    <p><a  href="#">Contact Us</a></p>
+                </div>
+
+                <div class="col-lg-3 link1">
+                    <p>Future Information</p>
+                    <p><a  href="#">Term & Condition</a></p>
+                    <p><a  href="#">Privacy Policy</a></p>
+                </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="jumbotron jumbotron-fluid p-0">
+  <div class="container">
+    <app-header></app-header>
+    <div class="container header-heading">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4"></div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-12">
+            <div class="row mt-5 d-none d-xl-block">
+              <div class="col-12 text-center">
+                <img class="logo_small" src="..\assets\img\logo_small.svg" alt="">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="text-white pt-4 fs-30 fw-500 lh-142 text-center">Making the Most of Digital Era</h1>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                <p class="text-white text-center">We prioritize you and create tailor-made digital solutions to ensure your growth…</p>
+              </div>
+              <div class="col-12 text-center">
+                <a class="btn btn-light fs-18 fw-500" type="button" href="#"><span style="padding:15px;">Learn More
+                  <img src="..\assets\img\blackArrow.svg" alt="">
+                </span></a>
+              </div>
+            </div>
+            <div class="row mt-5 d-none d-lg-block d-xl-none">
+              <div class="col-12 text-center">
+                <img class="logo_small" src="..\assets\img\logo_small.svg" alt="">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="text-white pt-4 fs-30 fw-500 lh-142 text-center">Making the Most of Digital Era</h1>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                <p class="text-white text-center">We prioritize you and create tailor-made digital solutions to ensure your growth…</p>
+              </div>
+              <div class="col-12 text-center">
+                <a class="btn btn-light fs-18 fw-500" type="button" href="#"><span>Learn More
+                  <img src="..\assets\img\blackArrow.svg" alt="">
+                </span></a>
+              </div>
+            </div>
+            <div class="row mt-5 d-none d-md-block d-lg-none">
+              <div class="col-12 text-center">
+                <img class="logo_small" src="..\assets\img\logo_small.svg" alt="">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="text-white pt-4 fs-30 fw-500 lh-142 text-center">Making the Most of Digital Era</h1>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                <p class="text-white text-center">We prioritize you and create tailor-made digital solutions to ensure your growth…</p>
+              </div>
+              <div class="col-12 text-center">
+                <a class="btn btn-light fs-18 fw-500" type="button" href="#"><span>Learn More
+                  <img src="..\assets\img\blackArrow.svg" alt="">
+                </span></a>
+              </div>
+            </div>
+            <div class="row mt-5 mb-5 d-none d-sm-block d-md-none">
+              <div class="col-12 text-center">
+                <img class="logo_small" src="..\assets\img\logo_small.svg" alt="">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="text-white pt-4 fs-30 fw-500 lh-142 text-center">Making the Most of Digital Era</h1>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                <p class="text-white text-center">We prioritize you and create tailor-made digital solutions to ensure your growth…</p>
+              </div>
+              <div class="col-12 text-center">
+                <a class="btn btn-light fs-18 fw-500" type="button" href="#"><span>Learn More
+                  <img src="..\assets\img\blackArrow.svg" alt="">
+                </span></a>
+              </div>
+            </div>
+            <div class="row mt-5 mb-5 d-block d-sm-none">
+              <div class="col-12 text-center">
+                <img class="logo_small" src="..\assets\img\logo_small.svg" alt="">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="text-white pt-4 fs-30 fw-500 lh-142 text-center">Making the Most of Digital Era</h1>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                <p class="text-white text-center">We prioritize you and create tailor-made digital solutions to ensure your growth…</p>
+              </div>
+              <div class="col-12 text-center">
+                <a class="btn btn-light fs-18 fw-500" type="button" href="#"><span>Learn More
+                  <img src="..\assets\img\blackArrow.svg" alt="">
+                </span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4"></div>
+      </div>
+      <div class="row d-none d-xl-block">
+        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <img src="..\assets\img\Group513.png" alt="">
+          <img src="..\assets\img\mobile.svg" alt="" class="laptop-img">
+        </div>
+      </div>
+      <div class="row d-none d-lg-block d-xl-none">
+        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <img src="..\assets\img\Group513.png" alt="">
+          <img src="..\assets\img\mobile.svg" alt="" class="laptop-img-lg">
+        </div>
+      </div>
+      <div class="row d-none d-md-block d-lg-none">
+        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <img src="..\assets\img\Group513.png" alt="" class="rainbow-img-md">
+          <img src="..\assets\img\mobile.svg" alt="" class="laptop-img-md">
+        </div>
+      </div>
+
+      <img class="oval1" src="..\assets\img\Ellipse38.svg" alt="">
+      <img class="oval2" src="..\assets\img\Ellipse38.svg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="container section2 mt-14">
+  <h1 class="text-center fw-500 fs-30">AWESOME SERVICES</h1>
+  <hr class="get-in-touch-border-bottom">
+  <p style="text-align: center;">We are the world-leading agency with professional services guaranteeing unrivaled results.</p>
+
+  <div class="row">
+          <div class="col-lg-4 col-md-6 col-xl-4 col-xs-12 col-sm-6 mt-4" *ngFor="let service of services;let i=index;" data-aos="fade-up">
+            <div class="row box-services-xl d-none d-xl-block">
+              <div class="col-12">
+                <img class="img1" alt="" src="{{service.src}}">
+              </div>
+              <div class="col-12">
+                <h2 class="my-3 fs-24">{{service.title}}</h2>
+              </div>
+              <div class="col-12">
+                <p>{{service.para}}<a href="#" class="learn-more-text fw-500">Learn More...</a></p>
+              </div>
+            </div>
+            <div class="row box-services-xl d-none d-lg-block d-xl-none">
+              <div class="col-12">
+                <img class="img1" alt="" src="{{service.src}}">
+              </div>
+              <div class="col-12">
+                <h2 class="my-3 fs-24">{{service.title}}</h2>
+              </div>
+              <div class="col-12">
+                <p>{{service.para}}<a href="#" class="learn-more-text fw-500">Learn More...</a></p>
+              </div>
+            </div>
+            <div class="row box-services-md d-none d-md-block d-lg-none">
+              <div class="col-12">
+                <img class="img1" alt="" src="{{service.src}}">
+              </div>
+              <div class="col-12">
+                <h2 class="my-3 fs-24">{{service.title}}</h2>
+              </div>
+              <div class="col-12">
+                <p>{{service.para}}<a href="#" class="learn-more-text fw-500">Learn More...</a></p>
+              </div>
+            </div>
+            <div class="row box-services-sm d-none d-sm-block d-md-none">
+              <div class="col-12">
+                <img class="img1" alt="" src="{{service.src}}">
+              </div>
+              <div class="col-12">
+                <h2 class="my-3 fs-24">{{service.title}}</h2>
+              </div>
+              <div class="col-12">
+                <p>{{service.para}}<a href="#" class="learn-more-text fw-500">Learn More...</a></p>
+              </div>
+            </div>
+            <div class="row box-services-xs d-block d-sm-none">
+              <div class="col-12">
+                <img class="img1" alt="" src="{{service.src}}">
+              </div>
+              <div class="col-12">
+                <h2 class="my-3 fs-24">{{service.title}}</h2>
+              </div>
+              <div class="col-12">
+                <p>{{service.para}}<a href="#" class="learn-more-text fw-500">Learn More...</a></p>
+              </div>
+            </div>
+          </div>
+  </div>
+</div>
+
+<div class="container section3 section">
+  <h1 class="fs-30 text-center fw-500">ABOUT US</h1>
+  <hr class="get-in-touch-border-bottom">
+  <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+
+  <div class="row">
+      <div class="col-lg-6 text-center">
+          <img class="img_about" src="..\assets\img\Group448.svg" alt="">
+      </div>
+      <div class="col-lg-5">
+          <h2>We are the powerhouse helping businesses reach their goals in record time. We love to create innovations...</h2>
+          <p>We are passionate to bring transformation</p>
+          <p>App Incubator is the name of the trust. We prioritize our clients and build long-term relationships. There is a reason we are considered the world’s best agency. We develop digital solutions religiously and work with passion and professionalism. Swift development, Supreme designs, and Effective communication are our core values.</p>
+          <p style="color: blue;"><a href="#" class="learn-more-text">See More Information <img class="" src="..\assets\img\infoArrow.svg" alt=""></a></p>
+      </div>
+  </div>
+</div>
+
+<div class="blue_back">
+  <div class="container section4 section important_fact">
+      <div class="row">
+              <div class="col-lg-4">
+                  <h2>Important Facts</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+                  <a class="nav-link btn btn-light" type="button" href="#"><span>Learn More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.678" height="20.311" viewBox="0 0 41.678 28.311"><path d="M41.11,54.719l-12.4-12.243a1.956,1.956,0,0,0-2.741,0,1.9,1.9,0,0,0,0,2.705l9.094,8.977H1.938a1.913,1.913,0,1,0,0,3.826H35.061l-9.094,8.977a1.9,1.9,0,0,0,0,2.705,1.956,1.956,0,0,0,2.741,0l12.4-12.243A1.9,1.9,0,0,0,41.11,54.719Z" transform="translate(0 -41.916)" /></svg>
+                  </span></a>
+              </div>
+              <div class="col-lg-8">
+                  <div class="row mt-4">
+                      <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-center" data-aos="fade-up">
+                        <div class="box1" *ngFor="let fact of facts;let i=index;"
+                          data-aos="fade-up">
+                          <img class="img1" alt="" src="{{fact.src}}">
+                          <h5 class="my-3 fs-34">{{fact.title}}</h5>
+                          <p class="">{{fact.para}}</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+      </div>
+  </div>
+</div>
+
+<div class="section5 industry-section">
+  <div class="container">
+      <h1 class="fs-30 fw-500 text-center">We Worked With</h1>
+      <hr class="get-in-touch-border-bottom">
+      <p style="text-align: center;">We are trusted by world-leading brands and growing startups.</p>
+  </div>
+
+  <div class="mt-4">
+      <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+        <div class="box2 col-12 col-lg-2 col-xl-2" *ngFor="let stack of stacks;let i=index;"
+          data-aos="fade-up">
+          <img class="img1" alt="" src="{{stack.src}}">
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="section6 industry-section">
+  <div class="container">
+      <h1 class="text-center fs-30 fw-500">Industries</h1>
+      <hr class="get-in-touch-border-bottom">
+      <p style="text-align: center;">We have industry-specific development teams and an exemplary experience.</p>
+  </div>
+
+  <div class="mt-4">
+      <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+        <div class="box3 col-12 col-lg-2 col-xl-2" *ngFor="let industry of industrys;let i=index;"
+          data-aos="fade-up">
+          <img class="img1" alt="" src="{{industry.src}}">
+          <h5 class="my-3">{{industry.title}}</h5>
+        </div>
+      </div>
+  </div>
+</div>
+<app-footer></app-footer>

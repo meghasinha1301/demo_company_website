@@ -1,0 +1,50 @@
+<div class="jumbotron jumbotron-fluid header pt-0">
+  <div class="container">
+    <app-header></app-header>
+    <div class="container mt-8 mb-8">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4"></div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-white pt-4 fs-34 text-center">Unmatched Services</h1>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-white text-center">We are the world-leading agency with professional services guaranteeing unrivaled results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4"></div>
+      </div>
+      <img class="oval1" src="..\assets\img\Ellipse38.svg" alt="">
+      <img class="oval2" src="..\assets\img\Ellipse38.svg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="container section3 section">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 mb-5" *ngFor="let service of servicesData">
+      <div class="row p-5">
+        <div class="col-12">
+          <img src="{{service.src}}" alt="">
+        </div>
+        <div class="col-12 mt-3">
+          <h2>{{service.title}}</h2>
+        </div>
+        <div class="col-12">
+          <p>{{service.content}}<a href="#">Learn More...</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <button type="button" class="btn case-study-btn btn-lg" style="width:180px;"><span class="fs-18">View More
+        <img src="..\assets\img\arrowWhite.svg">
+      </span></button>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

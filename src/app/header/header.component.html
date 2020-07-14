@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+    <img src="..\assets\img\logo.svg" style="width:200px;" class="d-inline-block align-top" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ml-auto topnav">
+      <li class="nav-item">
+          <a class="nav-link" routerLink="" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact: true}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/services" routerLinkActive="router-link-active">Services</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/ourWork" routerLinkActive="router-link-active">Our Work</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/blogs" routerLinkActive="router-link-active">Blogs</a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="router-link-active">About Us</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link btn btn-light" type="button" (click)="goToContactUs()"><span class="fw-500 fs-14" style="padding:15px;">Contact Us
+            <img src="..\assets\img\blackArrow.svg" alt="">
+          </span></a>
+      </li>
+  </ul>
+  </div>
+</nav>

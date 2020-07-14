@@ -1,0 +1,70 @@
+<div class="jumbotron jumbotron-fluid header pt-0">
+  <div class="container">
+    <app-header></app-header>
+    <div class="container mt-8 mb-8">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4"></div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-white pt-4 fs-34 lh-142 text-center">Our Work</h1>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-white text-center">Our Portfolio is our face. Our achievements portrait success of our partners.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4"></div>
+      </div>
+      <img class="oval1" src="..\assets\img\Ellipse38.svg" alt="">
+      <img class="oval2" src="..\assets\img\Ellipse38.svg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="container section">
+  <div class="row mb-5" *ngFor="let work of ourWorkData; let i = index">
+    <div class="col-lg-12">
+      <div class="card work-card1" *ngIf="i%2 === 0">
+        <div class="row no-gutters">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="card-body pl-5">
+              <h2 class="card-title card-heading">{{work.title}}</h2>
+              <hr class="line">
+              <p class="card-text fs-15">{{work.content}}</p>
+              <a href="#" class="btn case-study-btn"><span>View CaseStudy
+                <img src="..\assets\img\arrowWhite.svg">
+              </span></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <img src="{{work.src}}" class="card-img ourWorkImg" alt="...">
+            <img src="{{work.overlapImage}}" class="card-img overlappingCard" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="card work-card2" *ngIf="i%2 !== 0">
+        <div class="row no-gutters">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <img src="{{work.src}}" class="card-img ourWorkImg" alt="...">
+            <img src="{{work.overlapImage}}" class="card-img overlappingCard" alt="...">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="card-body pl-5">
+              <h2 class="card-title card-heading">{{work.title}}</h2>
+              <hr class="line">
+              <p class="card-text fs-15">{{work.content}}</p>
+              <a href="#" class="btn case-study-btn"><span>View CaseStudy
+                <img src="..\assets\img\arrowWhite.svg">
+              </span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

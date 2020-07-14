@@ -1,0 +1,319 @@
+<!-- <div class="container-fluid header">
+    <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#"><img src="..\assets\img\logo.svg" alt="logo" style="width:200px;"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto topnav">
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link">Our Works</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link">Blogs</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link btn btn-light" type="button" href="#" >Contact Us <span><i class="fa fa-arrow-alt-right"></i></span></a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+
+      <div class="container section1 position-absolute">
+          <div class="row">
+              <div class="col-lg-12 middle-content">
+                  <h2 class="text-white">About Us</h2>
+                  <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+
+              </div>
+              <img class="oval1" src="..\assets\img\Ellipse38.svg" alt="">
+             <img class="oval2" src="..\assets\img\Ellipse38.svg" alt="">
+          </div>
+
+      </div>
+  </div>
+
+
+  <div class="section3 section">
+    <div class="container">
+        <h1 style="text-align: center;">Our Values</h1>
+        <p style="text-align: center;">We share common values and that makes us a great team</p>
+        <p style="text-align: center;">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+
+    <div class="mt-4">
+        <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+          <div class="box2 col-12 col-lg-2 col-xl-2" *ngFor="let value of values;let i=index;"
+            data-aos="fade-up">
+            <h5 class="my-3">{{value.title}}</h5>
+            <p class="">{{value.para}}</p>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="container section2 section">
+      <h1 style="text-align: center;">Why choose us?</h1>
+      <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+
+      <div class="row">
+
+              <div class="col-12 mt-4">
+                  <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+                    <div class="box" *ngFor="let service of services;let i=index;"
+                      data-aos="fade-up">
+                      <img class="img1" alt="" src="{{service.src}}">
+                      <h5 class="my-3">{{service.title}}</h5>
+                      <p class="">{{service.para}}</p>
+                    </div>
+                  </div>
+              </div>
+      </div>
+  </div>
+
+
+
+  <div class="blue_back">
+      <div class="container section4 section important_fact">
+          <div class="row">
+                  <div class="col-lg-4">
+                      <h2>Important Facts</h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+                      <a class="nav-link btn btn-light" type="button" href="#" >Learn More</a>
+                  </div>
+                  <div class="col-lg-8">
+                      <div class="row mt-4">
+                          <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+                            <div class="box1" *ngFor="let fact of facts;let i=index;"
+                              data-aos="fade-up">
+                              <img class="img1" alt="" src="{{fact.src}}">
+                              <h5 class="my-3">{{fact.title}}</h5>
+                              <p class="">{{fact.para}}</p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+      </div>
+  </div>
+
+<div class="section5 section">
+    <div class="container">
+        <h1 style="text-align: center;">We Worked With</h1>
+        <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+    </div>
+
+    <div class="mt-4">
+        <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+          <div class="box2 col-12 col-lg-2 col-xl-2" *ngFor="let stack of stacks;let i=index;"
+            data-aos="fade-up">
+            <img class="img1" alt="" src="{{stack.src}}">
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <div class="container section3 section">
+      <h1 style="text-align: center;">GET IN TOUCH</h1>
+      <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+
+      <div class="row">
+              <div class="col-lg-4">
+                  <h2>Contact Info</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+                  <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                  <h2>Address</h2>
+                  <p>350 Bay St, 7th floor, Toronto,ON M5H 2S6</p>
+              </div>
+              <div class="col-lg-8">
+                  <div class="col-12 mt-4">
+                      <form>
+                          <div class="row">
+                          <div class="form-group col-lg-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" value="Enter your name.." required>
+                          </div>
+
+                          <div class="form-group  col-lg-6">
+                            <label for="email">Email address</label>
+                            <input type="text" class="form-control" id="email" value="Enter your email..">
+                          </div>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="subject">Subject</label>
+                              <input type="text" class="form-control" id="subject" value="Enter subject..">
+                          </div>
+
+                          <div class="form-group">
+                              <label for="message">Message</label>
+                              <textarea id="story"  class="form-control" name="message" rows="3" cols="33"></textarea>
+                          </div>
+
+                          <button type="submit" class="btn btn-primary">Send Message</button>
+
+                        </form>
+                  </div>
+              </div>
+      </div>
+  </div>
+
+
+  <div class="black_back">
+    <div class="container section7 section">
+        <div class="row">
+                <div class="col-lg-5 ">
+                    <a class="navbar-brand" href="#"><img src="..\assets\img\logo.svg" alt="logo" style="width:200px;"></a>
+                    <p style="color: #ACACAC;">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+
+                        <a  href="#"><img class="facebook_logo social_logo" src="..\assets\img\fb.svg" alt="logo"></a>
+                        <a href="#"><img class="twitter_logo social_logo"  src="..\assets\img\twi.svg" alt="logo"></a>
+                        <a  href="#"><img class="insta_logo social_logo" src="..\assets\img\insta.svg" alt="logo"></a>
+                </div>
+
+                <div class="col-lg-3 link">
+                    <p>Company</p>
+                    <p><a  href="#">About</a></p>
+                    <p><a  href="#">Service</a></p>
+                    <p><a  href="#">Contact Us</a></p>
+                </div>
+
+                <div class="col-lg-3 link1">
+                    <p>Future Information</p>
+                    <p><a  href="#">Term & Condition</a></p>
+                    <p><a  href="#">Privacy Policy</a></p>
+                </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="jumbotron jumbotron-fluid header pt-0">
+  <div class="container">
+    <app-header></app-header>
+    <div class="container mt-8 mb-8">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4"></div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-white pt-4 fs-34 text-center fw-500">About Us</h1>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-white text-center">We are the powerhouse helping businesses reach their goals in record time. We love to create innovations...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4"></div>
+      </div>
+      <img class="oval1" src="..\assets\img\Ellipse38.svg" alt="">
+      <img class="oval2" src="..\assets\img\Ellipse38.svg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="section3 section">
+  <div class="container">
+      <h1 class="text-center fw-500 fs-30">Our Values</h1>
+      <hr class="get-in-touch-border-bottom">
+      <p style="text-align: center;">We believe in Quality, Commitment, Professionalism, and Punctuality</p>
+      <h2 style="text-align: center;" class="mt-5">Our Clients are our assets</h2>
+      <p style="text-align: center;">We turn every stone to manage and build creative digital solutions to make you succeed in your goals</p>
+      <p style="text-align: center;">There is a reason that our clients trust us for their future projects. We strive hard and bring every resource to create wonderful solutions just for you!</p>
+  </div>
+
+  <div class="mt-4">
+      <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+        <div class="box2 col-12 col-lg-2 col-xl-2" *ngFor="let value of values;let i=index;"
+          data-aos="fade-up">
+          <h5 class="my-3 fs-24 fw-500">{{value.title}}</h5>
+          <p class="">{{value.para}}</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="container section2 section mt-0">
+  <h1 style="text-align: center;">Why choose us?</h1>
+  <hr class="get-in-touch-border-bottom">
+  <p style="text-align: center;">We have got the world’s best team and managers</p>
+
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12" *ngFor="let service of services;let i=index;" data-aos="fade-up">
+      <div class="row p-5">
+        <div class="col-12">
+          <img class="img1" alt="" src="{{service.src}}">
+        </div>
+        <div class="col-12">
+          <h2 class="my-3 fs-24">{{service.title}}</h2>
+        </div>
+        <div class="col-12">
+          <p class="fs-18">{{service.para}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="blue_back">
+  <div class="container section4 section important_fact">
+      <div class="row">
+              <div class="col-lg-4">
+                  <h2>Important Facts</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+                  <a class="nav-link btn btn-light" type="button" href="#"><span>Learn More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.678" height="20.311" viewBox="0 0 41.678 28.311"><path d="M41.11,54.719l-12.4-12.243a1.956,1.956,0,0,0-2.741,0,1.9,1.9,0,0,0,0,2.705l9.094,8.977H1.938a1.913,1.913,0,1,0,0,3.826H35.061l-9.094,8.977a1.9,1.9,0,0,0,0,2.705,1.956,1.956,0,0,0,2.741,0l12.4-12.243A1.9,1.9,0,0,0,41.11,54.719Z" transform="translate(0 -41.916)" /></svg>
+                  </span></a>
+              </div>
+              <div class="col-lg-8">
+                  <div class="row mt-4">
+                      <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-center" data-aos="fade-up">
+                        <div class="box1" *ngFor="let fact of facts;let i=index;"
+                          data-aos="fade-up">
+                          <img class="img1" alt="" src="{{fact.src}}">
+                          <h5 class="my-3 fs-34">{{fact.title}}</h5>
+                          <p class="">{{fact.para}}</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+      </div>
+  </div>
+</div>
+
+<div class="section5 section">
+  <div class="container">
+      <h1 style="text-align: center;">We Worked With</h1>
+      <hr class="get-in-touch-border-bottom">
+      <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...</p>
+  </div>
+
+  <div class="mt-4">
+      <div class="w-100 mb-4-1 d-flex flex-wrap justify-content-around " data-aos="fade-up">
+        <div class="box2 col-12 col-lg-2 col-xl-2 d-flex justify-content-center" *ngFor="let stack of stacks;let i=index;"
+          data-aos="fade-up">
+          <img class="img1" alt="" src="{{stack.src}}">
+        </div>
+      </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
